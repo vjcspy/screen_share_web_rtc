@@ -74,7 +74,13 @@ const db = getFirestore(app);
 // };
 
 const configuration: any = {
-  iceServers: [{ urls: ['stun:stun.l.google.com:19302'] }],
+  iceServers: [
+    {
+      urls: 'turn:turn.ggg.systems:3478',
+      username: 'test',
+      credential: 'test123',
+    },
+  ],
   iceTransportPolicy: 'all',
   iceCandidatePoolSize: 0,
 };

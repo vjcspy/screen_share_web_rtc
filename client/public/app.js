@@ -1,7 +1,16 @@
 mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-button'));
 // DEfault configuration - Change these if you have a different STUN or TURN server.
-const configuration = {"iceServers":[{"urls":["stun:stun.l.google.com:19302"]}],"iceTransportPolicy":"all","iceCandidatePoolSize":0};
-
+const configuration = {
+  iceServers: [
+    {
+      urls: 'turn:turn.ggg.systems:3478',
+      username: 'test',
+      credential: 'test123',
+    },
+  ],
+  iceTransportPolicy: 'all',
+  iceCandidatePoolSize: 0,
+};
 let peerConnection = null;
 let remoteStream = null;
 let roomDialog = null;

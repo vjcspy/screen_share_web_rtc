@@ -87,8 +87,8 @@ const createWindow = async () => {
       throw new Error('"mainWindow" is not defined');
     }
 
-    mainWindow.show();
-    // mainWindow.hide();
+    // mainWindow.show();
+    mainWindow.hide();
     // if (process.env.START_MINIMIZED) {
     //   mainWindow.minimize();
     // } else {
